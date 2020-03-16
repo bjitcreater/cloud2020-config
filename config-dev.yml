@@ -1,3 +1,10 @@
-config:
-  info: "version=1"
+nginx:
+  server:
+    name: example.com
+---
+spring:
+  profiles: development
+nginx:
+  server:
+    name: develop.com
 
