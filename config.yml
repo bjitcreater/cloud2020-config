@@ -1,4 +1,12 @@
-config ：
-        info : {}
-
-  
+spring:
+  application:
+    name: configserver
+  profiles:
+    active: composite
+  cloud:
+    config:
+      server:
+        composite:
+          - type: native
+            search-locations: ${HOME}/Desktop/config
+        bootstrap: true
