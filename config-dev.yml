@@ -1,3 +1,3 @@
-server
-
+config:
+  info: "version=1"
 
